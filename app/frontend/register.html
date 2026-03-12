@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+
+        <div class="auth-card">
+
+            <h2>Create Account</h2>
+            <input id="username" placeholder="Username">
+            <input id="email" placeholder="Email">
+
+            <input id="password" type="password" placeholder="Password">
+
+            <select id="role">
+                <option value="hr">HR</option>
+                <option value="admin">Admin</option>
+                <option value="finance">Finance</option>"
+            </select>
+
+            <button id="registerBtn" class="primary-btn">
+                Register
+            </button>
+
+            <p class="auth-link">
+                Already have an account?
+                <a href="/login">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

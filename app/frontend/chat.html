@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Knowledge Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <h2 class="logo">AI Assistant</h2>
+
+            <p class="sidebar-subtitle">
+                Upload a document
+            </p>
+
+            <div class="upload-box">
+
+                <input type="file" id="fileInput">
+
+                <button id="uploadBtn">
+                    Upload File
+                </button>
+
+                <div id="uploadStatus" class="upload-status"></div>
+                
+            </div>
+            <button id="logoutBtn" onclick="logout()"><b>Logout</b></button>
+        </div>
+
+
+        <!-- CHAT AREA -->
+
+        <div class="chat-container">
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="ai">
+                    Hello 👋 Upload a document and ask me questions about it.
+                </div>
+
+            </div>
+
+
+            <div class="chat-input-container">
+
+                <input id="question" placeholder="Ask a question...">
+
+                <button id="sendBtn">
+                    Send
+                </button>
+                
+            </div>
+        </div>
+       
+    </div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
